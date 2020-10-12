@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
+import {userLogin} from '../services/authService/UserLogin';
 interface IProps {
 }
 
@@ -34,9 +35,14 @@ export default class Login extends Component<IProps, IState>{
         this.setState({stayLoggedIn: !this.state.stayLoggedIn});
     }
 
-    onSubmit = (event: any) => {
+    onSubmit = async (event: any) => {
         event.preventDefault();
-        console.log(this.state);
+        try{
+            await userLogin(this.state.email, this.state.password, this.state.stayLoggedIn);
+            alert("Login success");
+        }catch (e) {
+            alert("Login failed");
+        }
     }
 
     render(){
