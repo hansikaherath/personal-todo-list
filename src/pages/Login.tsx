@@ -2,6 +2,7 @@ import React, {Component, FormEvent} from 'react';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import LoadingScreen from "./common/LoadingScreen";
 
 import {userLogin} from '../services/authService/UserLogin';
 interface IProps {
@@ -10,7 +11,8 @@ interface IProps {
 interface IState {
     email?: String,
     password?: String,
-    stayLoggedIn?: Boolean
+    stayLoggedIn?: Boolean,
+    loading?: Boolean
 }
 
 export default class Login extends Component<IProps, IState>{
@@ -19,7 +21,8 @@ export default class Login extends Component<IProps, IState>{
         this.state = {
             email:'',
             password:'',
-            stayLoggedIn:false
+            stayLoggedIn:false,
+            loading: false
         }
     }
 
@@ -37,11 +40,14 @@ export default class Login extends Component<IProps, IState>{
 
     onSubmit = async (event: any) => {
         event.preventDefault();
+        this.setState({loading:true});
         try{
             await userLogin(this.state.email, this.state.password, this.state.stayLoggedIn);
             alert("Login success");
         }catch (e) {
             alert("Login failed");
+        }finally {
+            this.setState({loading:false});
         }
     }
 
@@ -72,6 +78,11 @@ export default class Login extends Component<IProps, IState>{
                         </Button>
                     </Form>
                 </div>
+
+                {this.state.loading==true?
+                <LoadingScreen/>
+                : null
+                }
             </Container>
            );
 
