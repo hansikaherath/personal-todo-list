@@ -10,16 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb3e9d08-481c-4e71-b3a0-a5c50c9506c5" name="Default Changelist" comment="firebase, bootstrap libraries are added">
-      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
+    <list default="true" id="cb3e9d08-481c-4e71-b3a0-a5c50c9506c5" name="Default Changelist" comment="simple login form design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602522796462</updated>
       <workItem from="1602522799466" duration="682000" />
-      <workItem from="1602523513424" duration="5214000" />
+      <workItem from="1602523513424" duration="6699000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1602523650577</created>
@@ -81,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602524830254</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="simple login form design">
+      <created>1602528761513</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602528761513</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +101,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="firebase, bootstrap libraries are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="firebase, bootstrap libraries are added" />
+    <MESSAGE value="simple login form design" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple login form design" />
   </component>
   <component name="WindowStateProjectService">
     <state x="141" y="42" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602527885474">
@@ -132,10 +133,10 @@
       <screen x="0" y="23" width="1366" height="745" />
     </state>
     <state width="1345" height="185" key="GridCell.Tab.0.right/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602528382332" />
-    <state x="278" y="120" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1602523657413">
+    <state x="278" y="120" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1602528765578">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
-    <state x="278" y="120" width="800" height="525" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602523657413" />
+    <state x="278" y="120" width="800" height="525" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602528765578" />
     <state x="492" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602523985106">
       <screen x="0" y="23" width="1366" height="745" />
     </state>
